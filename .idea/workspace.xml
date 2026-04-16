@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="" />
+    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件">
+      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/01 postgrelsql在docker中配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/02 如何加入spring项目中.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/03 IDEA连接postgrelsql数据源.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/04 postgrelsql的常见命令.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/添加的内容/postgrelsql的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -20,9 +32,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3CI40Fz50yhPdnRKCedc3BQpfvv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,13 +42,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AgentXLearningApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/claude_program/Agentx/Agentx_learning",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\claude_program\Agentx\Agentx_learning\添加的内容\Postgrelsql数据库" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AgentXLearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="AgentX_learning" />
@@ -63,10 +97,74 @@
       <option name="presentableId" value="Default" />
       <updated>1776059529997</updated>
       <workItem from="1776059531254" duration="299000" />
+      <workItem from="1776342735041" duration="7922000" />
     </task>
+    <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
+      <option name="closed" value="true" />
+      <created>1776342826663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776342826663</updated>
+    </task>
+    <task id="LOCAL-00002" summary="//3 .idea中的文件,好像是idea的默认配置,上传github时可以直接忽略掉">
+      <option name="closed" value="true" />
+      <created>1776343123283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776343123283</updated>
+    </task>
+    <task id="LOCAL-00003" summary="//4 初始化">
+      <option name="closed" value="true" />
+      <created>1776343286792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776343286793</updated>
+    </task>
+    <task id="LOCAL-00004" summary="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件">
+      <option name="closed" value="true" />
+      <created>1776346311060</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776346311060</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的" />
+    <MESSAGE value="//3 .idea中的文件,好像是idea的默认配置,上传github时可以直接忽略掉" />
+    <MESSAGE value="//4 初始化" />
+    <MESSAGE value="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件" />
   </component>
 </project>
