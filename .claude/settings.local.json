@@ -1,0 +1,7 @@
+{
+  "enabledMcpjsonServers": [
+    "notion-webhook",
+    "obsidian-mcp-server"
+  ],
+  "enableAllProjectMcpServers": true
+}

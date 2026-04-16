@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "obsidian-mcp-server": {
+      "command": "node",
+      "args": [
+        "D:\\claude_program\\obsidian mcp\\node_modules\\obsidian-mcp-server\\dist\\index.js"
+      ],
+      "env": {
+        "OBSIDIAN_API_KEY": "95121a6472ca4288babd1daa735e288578d41669e7d449a27b8d8db68ad88a74",
+        "VERIFY_SSL": "false",
+        "OBSIDIAN_PROTOCOL": "https",
+        "OBSIDIAN_HOST": "127.0.0.1",
+        "OBSIDIAN_PORT": "27124",
+        "REQUEST_TIMEOUT": "5000",
+        "MAX_CONTENT_LENGTH": "52428800",
+        "MAX_BODY_LENGTH": "52428800",
+        "RATE_LIMIT_WINDOW_MS": "900000",
+        "RATE_LIMIT_MAX_REQUESTS": "200",
+        "TOOL_TIMEOUT_MS": "60000"
+      }
+    },
+    "notion-webhook": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-notion-webhook"
+      ]
+    }
+  }
+}
