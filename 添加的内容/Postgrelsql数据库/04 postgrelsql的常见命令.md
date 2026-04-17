@@ -2,23 +2,34 @@
 
 ## 一、PostgreSQL 常见命令（psql）
 
-### 1. 连接数据库
+### 1. 连接数据库并进入 psql 交互式终端
 
 ```bash
-# 方式一：docker exec 进入容器连接
+# 方式一：docker exec 进入容器并进入 psql 终端（推荐）
+# 注意：必须加 -it 参数才能进入交互式终端
 docker exec -it postgres-container_AgentX_Learn psql -U AgentX_Learn -d AgentX_Learn
 
 # 方式二：如果本地有 psql 客户端
 psql -h localhost -p 5433 -U AgentX_Learn -d AgentX_Learn
 ```
 
-### 2. 常用 psql 元命令
+**进入 psql 终端后，你会看到类似这样的提示符：**
+```
+AgentX_Learn=# 
+```
+这时就可以输入下面的命令了！
+
+---
+
+### 2. 方式一：在 psql 交互式终端中使用（推荐）
+
+先进入 psql 终端（见上面的命令），然后输入：
 
 ```sql
 -- 列出所有数据库
 \l
 
--- 列出所有表
+-- 列出当前数据库的所有表
 \dt
 
 -- 列出所有用户
@@ -26,12 +37,14 @@ psql -h localhost -p 5433 -U AgentX_Learn -d AgentX_Learn
 
 -- 查看表结构
 \d 表名
+-- 例如：\d users
 
 -- 查看某个表的详细结构
 \d+ 表名
 
 -- 切换数据库
 \c 数据库名
+-- 例如：\c postgres
 
 -- 查看当前连接信息
 \conninfo
@@ -39,8 +52,30 @@ psql -h localhost -p 5433 -U AgentX_Learn -d AgentX_Learn
 -- 显示历史命令
 \s
 
--- 退出 psql
+-- 清屏
+\! clear
+
+-- 退出 psql 终端
 \q
+```
+
+---
+
+### 3. 方式二：用 docker exec 直接执行单条命令（不进入终端）
+
+如果不想进入交互式终端，可以用 `-c` 参数直接执行：
+
+```bash
+# 列出所有数据库
+docker exec postgres-container_AgentX_Learn psql -U AgentX_Learn -d AgentX_Learn -c "\l"
+
+# 列出所有表
+docker exec postgres-container_AgentX_Learn psql -U AgentX_Learn -d AgentX_Learn -c "\dt"
+
+# 查询数据
+docker exec postgres-container_AgentX_Learn psql -U AgentX_Learn -d AgentX_Learn -c "SELECT * FROM users;"
+
+# 注意：SQL 语句需要加引号，元命令不需要
 ```
 
 ### 3. SQL 基础操作
