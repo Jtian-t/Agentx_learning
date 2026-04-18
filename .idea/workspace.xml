@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 创建了user表,并插入了admin和user两个用户">
       <change beforePath="$PROJECT_DIR$/agent.md" beforeDir="false" afterPath="$PROJECT_DIR$/agent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
-      <workItem from="1776489973171" duration="16725000" />
+      <workItem from="1776489973171" duration="17069000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
