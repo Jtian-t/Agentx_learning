@@ -9,7 +9,7 @@
 **核心任务**: 建立与原项目完全一致的认证体系。
 
 1. **技术栈对齐 (Tech Alignment)**:
-   - **ORM**: 彻底移除 JPA，统一使用 **MyBatis Plus 3.5.x**。
+   - **ORM**: 彻底移除 JPA，统一使用 **MyBatis Plus 3.5.x**。 
    - **Security**: 采用 **Spring Security + JWT (jjwt)** 实现无状态认证。
    - **Utils**: 引入 **Lombok**、**Hutool** 简化开发。
 2. **认证层实现**:
