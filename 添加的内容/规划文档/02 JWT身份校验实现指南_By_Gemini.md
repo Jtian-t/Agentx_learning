@@ -8,36 +8,30 @@
 ## 🛠 核心组件清单
 
 ### 1. 统一响应封装 (Result Object)
-- **路径建议**: `com.jin.agentx_learning.infrastructure.common.Result`
-- **核心字段**: `Integer code` (200, 401, 500), `T data`, `String msg`.
-- **作用**: 规范前后端交互协议。
+- **原项目路径**: `org.xhy.infrastructure.common.Result`
+- **核心字段**: `Integer code`, `T data`, `String msg`.
 
 ### 2. JWT 工具类 (JwtUtils)
-- **路径建议**: `com.jin.agentx_learning.infrastructure.security.JwtUtils`
-- **核心功能**:
-  - `generateToken(String username)`: 生成加密字符串（包含有效期、签发者）。
-  - `validateToken(String token)`: 验证 Token 是否合法且未过期。
-  - `getUsernameFromToken(String token)`: 解析 Token 还原用户标识。
+- **原项目路径**: `org.xhy.infrastructure.utils.JwtUtils`
+- **核心功能**: `generateToken`, `validateToken`, `getUsernameFromToken`.
 
 ### 3. 用户详情服务 (UserDetailsService Implementation)
-- **路径建议**: `com.jin.agentx_learning.domain.user.service.impl.UserDetailsServiceImpl`
-- **逻辑**: 实现 `UserDetailsService` 接口，根据 `email` 从 `users` 表中查询用户信息，并封装为 `UserDetails` 对象。
+- **原项目路径**: `org.xhy.domain.user.service.impl.UserDetailsServiceImpl`
 
 ### 4. JWT 过滤器 (JwtAuthenticationFilter)
-- **路径建议**: `com.jin.agentx_learning.infrastructure.security.JwtAuthenticationFilter`
-- **逻辑**: 
-  - 继承 `OncePerRequestFilter`。
-  - 从 `Authorization: Bearer <token>` 中提取 Token。
-  - 验证成功后，通过 `SecurityContextHolder.getContext().setAuthentication(...)` 手动设置登录态。
+- **原项目路径**: `org.xhy.infrastructure.security.JwtAuthenticationFilter`
 
 ### 5. 安全配置类 (SecurityConfig)
-- **路径建议**: `com.jin.agentx_learning.infrastructure.config.SecurityConfig`
-- **配置要点**:
-  - **CSRF**: 禁用（无状态 API 不需要）。
-  - **Session**: 设置为 `SessionCreationPolicy.STATELESS`。
-  - **拦截规则**: 放行 `/api/auth/login` 等公开接口，其余接口通过 `.authenticated()` 拦截。
-  - **密码加密**: 注入 `BCryptPasswordEncoder`。
-  - **跨域 (CORS)**: 配置允许前端域名访问。
+- **原项目路径**: `org.xhy.infrastructure.config.SecurityConfig`
+
+---
+
+## 📝 架构设计注解 (Annotations & Improvements)
+> **注意**: 以下为针对原项目设计的改进建议，仅作参考，开发时优先遵循上述原厂路径。
+
+1. **[包名优化]**: 原项目将 `JwtUtils` 放在 `utils` 下，从领域驱动设计（DDD）角度看，它更适合放在 `infrastructure.security` 包中，因为它是安全基础设施的一部分。
+2. **[异常处理]**: 原项目的身份校验失败可能直接抛出了系统异常。建议在改进版中通过自定义 `AuthenticationEntryPoint` 返回更友好的 `Result` 错误信息，提升前端交互感。
+3. **[常量抽取]**: 原项目可能将 `Bearer ` 等字符串硬编码在代码中。建议抽取到 `org.xhy.common.constant.AuthConstant` 中。
 
 ---
 

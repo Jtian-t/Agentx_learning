@@ -7,17 +7,20 @@
 - **用户 (You)**: 后端主开发。负责业务逻辑实现、数据库设计、API 编写。
 - **Agent (Me)**: 前端主开发 + 架构顾问。负责高交互感界面实现、SSE 交互逻辑、前端状态管理，并在用户请求时协助排查后端 Bug。
 
-## 🛠 技术栈
+## 🛠 技术栈与规范
 - **后端**: Java 17, Spring Boot, MyBatis Plus, Spring Security, JWT, PostgreSQL.
-- **前端**: React + TypeScript + Vanilla CSS (追求极致的交互与现代视觉感).
-- **通讯**: RESTful API + SSE (Server-Sent Events) 流式推送.
+- **包结构规范**: 严格对齐原项目 `org.xhy` 前缀。
+- **还原原则**: 
+  1. **原厂优先**: 类的命名、路径、拆分方式必须先完全照搬原项目。
+  2. **注解改进**: 若发现原项目设计不合理，严禁直接修改，必须以“代码注释”或“文档注解”形式记录改进方案。
+- **前端**: React + TypeScript + Vanilla CSS.
 
 ## 📌 当前状态
 - **阶段**: 第一阶段（身份基石）.
 - **已完成**: 
-  - `pom.xml` 依赖对齐（Security, JWT, MyBatis Plus）.
-  - 数据库 `users` 表与 `project_progress` 表设计.
-  - 项目全局规划书 v1.1 已同步 GitHub.
+  - 规划文档重命名（增加数字标识 01-03）.
+  - `pom.xml` 依赖对齐.
+  - 身份校验指南包路径对齐（`org.xhy`）.
 - **待执行**:
   - 后端：实现 `Result<T>`、`LoginController` 与 `SecurityConfig`.
   - 前端：搭建 React 工程化基础，实现炫酷的登录/注册界面.
