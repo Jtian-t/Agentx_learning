@@ -3,6 +3,9 @@ package com.jin.agentx_learning.infrastructure.interceptor.api.portal.user;
 
 
 import com.jin.agentx_learning.infrastructure.common.Result;
+import com.jin.agentx_learning.interfaces.dto.user.request.LoginRequest;
+import com.jin.agentx_learning.interfaces.dto.user.request.RegisterRequest;
+import com.jin.agentx_learning.interfaces.dto.user.response.CaptchaResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
