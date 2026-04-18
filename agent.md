@@ -22,11 +22,20 @@
 - **知识库**: 利用 `graphify-out/graph.json` 进行类关系追踪，确保逻辑链路一致。
 
 ### 2. 数字标识协议 (Sequential Identity Protocol)
-- **准则**: 确保项目演进路径 100% 可追溯。
-- **动作**: 
-  - **文件命名**: 所有规划文档、SQL 脚本必须带两位数字前缀（如 `01_xxx.md`, `08_xxx.sql`）。
-  - **Git 提交**: 统一格式 `[Step XX] <Type>: <Description>`。
-  - **进度同步**: 每次任务完成，必须将详细记录写入 PostgreSQL 的 `project_progress` 表。
+- **局部编号**: 每个文件夹内的数字前缀独立编号（从 `01_` 开始），禁止全局公用一个计数器。
+- **任务分包**: 若任务内容差异较大，必须在 `添加的内容/` 下创建独立的子文件夹进行归档。
+- **TODO 格式**: 所有的“执行步骤”或“计划表”必须采用 Markdown 的 TODO 列表格式（`- [ ]`），以便用户勾选进度。
+
+### 3. 需求自动捕获协议 (Requirement Harvesting)
+- **准则**: 任何用户提出的具体设计要求或偏好，Agent 必须自动更新至本 `agent.md` 的“具体设计要求”章节中，确保上下文永久留存。
+
+---
+
+## 🎯 具体设计要求 (Captured Requirements)
+1. **[Auth]**: 采用 Spring Security + JWT 实现身份校验，包前缀统一使用 `org.xhy`。
+2. **[Git]**: 提交信息必须带有 `[Step XX]` 标识。
+3. **[Management]**: 项目进度需同步至 PostgreSQL 的 `project_progress` 表。
+4. **[Doc]**: 文件夹内独立编号，执行步骤采用打勾（TODO）形式。
 
 ### 3. 像素级还原协议 (Pixel-Perfect Restoration)
 - **准则**: 包结构与类名必须具备“原厂血统”。
