@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 /** 图形验证码工具类 用于生成和验证图形验证码 */
+// TODO 这个工具类的并发问题考虑不是很完善,后续可以改进
 public class CaptchaUtils {
     // 存储UUID和对应的验证码
     private static final Map<String, CaptchaInfo> captchaMap = new ConcurrentHashMap<>();
@@ -69,7 +70,8 @@ public class CaptchaUtils {
 
     // 内部类 - 验证码信息
     private static class CaptchaInfo {
-    // zzhz这个final的修饰,是保证变量的可见性,防止并发问题.即类还没初始化时,就调用了这个方法
+    // 通过 final 修饰，我们把 CaptchaInfo 变成了一个不可变的“值对象”。
+    // 它通过 JVM 的构造函数语义保证了安全发布，使得它在多线程环境下无需额外加锁即可安全共享，且杜绝了在传输过程中被意外修改的风险。
         private final String code;
         private final long expirationTime;
 
