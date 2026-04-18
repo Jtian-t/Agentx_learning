@@ -4,33 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件">
-      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/01 postgrelsql在docker中配置.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/02 如何加入spring项目中.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/03 IDEA连接postgrelsql数据源.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/04 postgrelsql的常见命令.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/添加的内容/Postgrelsql数据库/img.png" afterDir="false" />
+    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 创建了user表,并插入了admin和user两个用户">
+      <change afterPath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/infrastructure/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/添加的内容/postgrelsql的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -40,32 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AgentXLearningApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/claude_program/Agentx/Agentx_learning",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AgentXLearningApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/claude_program/Agentx/Agentx_learning&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\claude_program\Agentx\Agentx_learning\添加的内容\Postgrelsql数据库" />
@@ -98,6 +115,8 @@
       <updated>1776059529997</updated>
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
+      <workItem from="1776353021470" duration="16216000" />
+      <workItem from="1776489973171" duration="6255000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
@@ -131,7 +150,31 @@
       <option name="project" value="LOCAL" />
       <updated>1776346311060</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="//初步在docker中配置了postgrel,因为之前项目有postgrel容器导致了一些错误. 比如宿主机端口要修改一下,我改成5433:5432 5432是容器中,postgrel默认的监听端口,不要修改,要不然连接不上. 还有数据卷挂载的问题.之前的数据卷命名相同.导致冲突了.新创建的数据库无法配置上用户名和密码-导致一直远程连接不上. 还因为idea远程连接数据库的缓存,导致我认为更换了数据卷volume命名,但数据还是有问题. 你更换数据卷名字,docker会自动管理,创建一个新的文件夹,来存储postgrelsql的数据.会完全隔离的">
+      <option name="closed" value="true" />
+      <created>1776353601855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776353601855</updated>
+    </task>
+    <task id="LOCAL-00006" summary="// 将com.jin.agentx_learning.domain.user.model.UserEntity初始导入">
+      <option name="closed" value="true" />
+      <created>1776435022398</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776435022398</updated>
+    </task>
+    <task id="LOCAL-00007" summary="// 创建了user表,并插入了admin和user两个用户">
+      <option name="closed" value="true" />
+      <created>1776440892230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776440892230</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +208,9 @@
     <MESSAGE value="//3 .idea中的文件,好像是idea的默认配置,上传github时可以直接忽略掉" />
     <MESSAGE value="//4 初始化" />
     <MESSAGE value="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件" />
+    <MESSAGE value="//初步在docker中配置了postgrel,因为之前项目有postgrel容器导致了一些错误. 比如宿主机端口要修改一下,我改成5433:5432 5432是容器中,postgrel默认的监听端口,不要修改,要不然连接不上. 还有数据卷挂载的问题.之前的数据卷命名相同.导致冲突了.新创建的数据库无法配置上用户名和密码-导致一直远程连接不上. 还因为idea远程连接数据库的缓存,导致我认为更换了数据卷volume命名,但数据还是有问题. 你更换数据卷名字,docker会自动管理,创建一个新的文件夹,来存储postgrelsql的数据.会完全隔离的" />
+    <MESSAGE value="// 将com.jin.agentx_learning.domain.user.model.UserEntity初始导入" />
+    <MESSAGE value="// 创建了user表,并插入了admin和user两个用户" />
+    <option name="LAST_COMMIT_MESSAGE" value="// 创建了user表,并插入了admin和user两个用户" />
   </component>
 </project>

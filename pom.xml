@@ -18,7 +18,7 @@
         <java.version>17</java.version>
 
         <mybatis-plus.version>3.5.11</mybatis-plus.version>
-
+        <jjwt.version>0.12.5</jjwt.version>
 
     </properties>
 
@@ -48,8 +48,10 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
-            <version>0.11.5</version>
+<!--  <version>0.11.5</version> 这个版本旧了,不符合Agentx使用的版本-->
+            <version>${jjwt.version}</version>
         </dependency>
+
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-impl</artifactId>

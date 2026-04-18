@@ -13,7 +13,13 @@
           <node negative="1">
             <node kind="database" negative="1" />
             <node kind="database" qname="AgentX_Learn">
-              <node kind="schema" qname="@" />
+              <node kind="schema">
+                <name qname="@" />
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="agentx_learn">
+              <node kind="schema" negative="1" />
             </node>
           </node>
         </introspection-scope>
