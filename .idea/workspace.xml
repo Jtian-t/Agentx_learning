@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 创建了user表,并插入了admin和user两个用户">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/utils/PasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/service/UserDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/auth/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/interceptor/AdminAuthInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/infrastructure/common/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/auth/UserAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/auth/UserAuthInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +109,7 @@
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
-      <workItem from="1776489973171" duration="7986000" />
+      <workItem from="1776489973171" duration="11068000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
