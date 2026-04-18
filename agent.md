@@ -1,39 +1,61 @@
-# AgentX 复现项目 - 协作契约 (agent.md)
+# AgentX 复现项目 - 核心协作契约 (v2.0)
 
-## 🎯 项目目标
-从零复现 `lucky-aeon/AgentX`（智能 Agent 构建平台），重点对标其 **MCP 协议集成**、**高可用网关**和**流式交互体验**。
+## 🎯 项目愿景 (The Goal)
+基于 `lucky-aeon/AgentX` 的最终形态进行 100% 像素级复现。
+**核心突破点**: 深入理解并重构 MCP (Model Context Protocol) 网关、模型高可用调度及流式交互引擎。
 
-## 👥 协作分工
-- **用户 (You)**: 后端主开发。负责业务逻辑实现、数据库设计、API 编写。
-- **Agent (Me)**: 前端主开发 + 架构顾问。负责高交互感界面实现、SSE 交互逻辑、前端状态管理，并在用户请求时协助排查后端 Bug。
+---
 
-## 🚀 核心工作流 (Core Workflow) - 强制执行
-1. **参考优先 (Reference-First)**: 任何代码编写或架构建议，必须首先检索 `reference/AgentX` 目录下的原厂实现。
-2. **像素级还原**: 除非用户明确要求改进，否则包名（`org.xhy`）、类名、方法签名必须与原厂一致。
-3. **数字标识 (Sequential Identity)**: 所有新创建的文档、SQL、重要记录必须带有两位数字前缀（如 `04_xxx`），以体现任务先后顺序。
+## 👥 协作职责 (Roles)
+- **用户 (Lead Backend)**: 负责核心业务实现、数据库建模、API 架构。
+- **Agent (Frontend & Architect)**: 
+  - **职责**: 负责高交互感前端开发、SSE 流式交互逻辑、CSS 视觉实现。
+  - **角色**: 架构咨询师。在用户开发后端时，负责提供原厂代码参考、Review 逻辑并确保对齐。
 
-## 📦 Git 演进方案 (Numerical Git Protocol)
-为了在 GitHub 提交历史中清晰展现进度，所有提交必须遵循：
-- **格式**: `[Step XX] <Type>: <Description>`
-- **示例**: `[Step 04] feat: implement UserEntity and Result class`
-- **标签**: 每完成一个关键里程碑（如完成第一阶段），必须打上对应的 Git Tag（如 `v01-auth-complete`）。
+---
 
-## 📌 当前状态
-- **阶段**: 第一阶段（身份基石）.
-- **已完成**: 
-  - 01-03: 规划书、JWT 指南、进度表.
-  - 04-06: 架构图谱、执行逻辑、数据模型.
-  - 07: 已克隆原厂源码至 `reference/AgentX` 并完成后端全量索引.
-- **待执行**:
-  - 后端：实现 `Result<T>`、`LoginController` 与 `SecurityConfig`.
-  - 前端：搭建 React 工程化基础，实现炫酷的登录/注册界面.
+## 📜 三大神圣执行协议 (Sacred Protocols)
 
-## 交互感要求 (Core UX)
-1. **实时感**: 所有的 AI 回复必须支持打字机效果 (SSE).
-2. **状态透明**: 所有的后端长耗时操作（如 MCP 工具调用）在前端必须有明确的状态动画（如：Thinking... Calling GitHub...）.
-3. **视觉风格**: 现代、简洁、暗色系优先，响应式布局.
+### 1. 参考优先协议 (Reference-First Protocol)
+- **准则**: 严禁凭空想象代码。
+- **动作**: 任何代码编写前，必须强制读取 `reference/AgentX` 下的原厂源码。
+- **知识库**: 利用 `graphify-out/graph.json` 进行类关系追踪，确保逻辑链路一致。
 
-## 🚀 自动化流程
-- 每完成一个功能点，必须：
-  1. 将详细说明写入 PostgreSQL 的 `project_progress` 表。
-  2. 提交代码并推送到 GitHub (master 分支)。
+### 2. 数字标识协议 (Sequential Identity Protocol)
+- **准则**: 确保项目演进路径 100% 可追溯。
+- **动作**: 
+  - **文件命名**: 所有规划文档、SQL 脚本必须带两位数字前缀（如 `01_xxx.md`, `08_xxx.sql`）。
+  - **Git 提交**: 统一格式 `[Step XX] <Type>: <Description>`。
+  - **进度同步**: 每次任务完成，必须将详细记录写入 PostgreSQL 的 `project_progress` 表。
+
+### 3. 像素级还原协议 (Pixel-Perfect Restoration)
+- **准则**: 包结构与类名必须具备“原厂血统”。
+- **规范**: 
+  - 统一使用 `org.xhy` 作为基础包名前缀。
+  - **原则**: “原厂优先，注解改进”。若原厂设计存在瑕疵，严禁直接改动类结构，必须先还原，再通过代码注解或文档记录优化建议。
+
+---
+
+## 🛠 技术底座 (Tech Stack)
+- **后端**: Java 17, Spring Boot 3.2.3, MyBatis Plus 3.5.11, Spring Security + JWT.
+- **前端**: React + TypeScript + Vanilla CSS (追求现代暗黑风格与打字机动效).
+- **存储**: PostgreSQL (主存), Redis (缓存), RabbitMQ (消息队列).
+
+---
+
+## 📌 演进轨迹 (Timeline & Status)
+- **[Step 01-03]**: 规划蓝图、JWT 身份指南、进度表 SQL。
+- **[Step 04-06]**: 架构/执行/数据 三大维度的知识图谱构建。
+- **[Step 07]**: 原厂源码全量克隆与后端知识索引构建。
+- **[Step 08]**: 协作契约 2.0 固化。
+
+## 🚀 当前任务 (Next Action)
+- **后端**: 按照 `02_JWT身份校验实现指南` 实现 `org.xhy.infrastructure.common.Result` 与安全拦截链。
+- **前端**: 待后端认证逻辑完成后，开启 React 工程化脚手架搭建。
+
+---
+
+## 💡 交互感核心要求 (UX Mandates)
+1. **打字机效果 (SSE)**: AI 输出必须具备流畅的流式实时感。
+2. **状态透明化**: 所有的 MCP 调用、模型搜索必须有明确的中间态动效（如：`Agent is thinking...`）。
+3. **极简主义**: 界面简洁、色彩深邃、反馈即时。
