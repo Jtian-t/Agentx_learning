@@ -1,4 +1,4 @@
-package com.jin.agentx_learning.infrastructure.infrastructure.common;
+package com.jin.agentx_learning.infrastructure.common;
 
 
 /** 通用API响应结果
