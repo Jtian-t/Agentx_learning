@@ -7,20 +7,23 @@
 - **用户 (You)**: 后端主开发。负责业务逻辑实现、数据库设计、API 编写。
 - **Agent (Me)**: 前端主开发 + 架构顾问。负责高交互感界面实现、SSE 交互逻辑、前端状态管理，并在用户请求时协助排查后端 Bug。
 
-## 🛠 技术栈与规范
-- **后端**: Java 17, Spring Boot, MyBatis Plus, Spring Security, JWT, PostgreSQL.
-- **包结构规范**: 严格对齐原项目 `org.xhy` 前缀。
-- **还原原则**: 
-  1. **原厂优先**: 类的命名、路径、拆分方式必须先完全照搬原项目。
-  2. **注解改进**: 若发现原项目设计不合理，严禁直接修改，必须以“代码注释”或“文档注解”形式记录改进方案。
-- **前端**: React + TypeScript + Vanilla CSS.
+## 🚀 核心工作流 (Core Workflow) - 强制执行
+1. **参考优先 (Reference-First)**: 任何代码编写或架构建议，必须首先检索 `reference/AgentX` 目录下的原厂实现。
+2. **像素级还原**: 除非用户明确要求改进，否则包名（`org.xhy`）、类名、方法签名必须与原厂一致。
+3. **数字标识 (Sequential Identity)**: 所有新创建的文档、SQL、重要记录必须带有两位数字前缀（如 `04_xxx`），以体现任务先后顺序。
+
+## 📦 Git 演进方案 (Numerical Git Protocol)
+为了在 GitHub 提交历史中清晰展现进度，所有提交必须遵循：
+- **格式**: `[Step XX] <Type>: <Description>`
+- **示例**: `[Step 04] feat: implement UserEntity and Result class`
+- **标签**: 每完成一个关键里程碑（如完成第一阶段），必须打上对应的 Git Tag（如 `v01-auth-complete`）。
 
 ## 📌 当前状态
 - **阶段**: 第一阶段（身份基石）.
 - **已完成**: 
-  - 规划文档重命名（增加数字标识 01-03）.
-  - `pom.xml` 依赖对齐.
-  - 身份校验指南包路径对齐（`org.xhy`）.
+  - 01-03: 规划书、JWT 指南、进度表.
+  - 04-06: 架构图谱、执行逻辑、数据模型.
+  - 07: 已克隆原厂源码至 `reference/AgentX` 并完成后端全量索引.
 - **待执行**:
   - 后端：实现 `Result<T>`、`LoginController` 与 `SecurityConfig`.
   - 前端：搭建 React 工程化基础，实现炫酷的登录/注册界面.
