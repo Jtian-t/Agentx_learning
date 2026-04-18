@@ -1,6 +1,6 @@
 package com.jin.agentx_learning.infrastructure.exception;
 
-
+//业务异常捕获类
 public class BusinessException extends RuntimeException {
 
     private String errorCode;
