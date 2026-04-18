@@ -3,6 +3,8 @@ package com.jin.agentx_learning.infrastructure.interceptor.api.portal.user;
 
 
 import com.jin.agentx_learning.infrastructure.common.Result;
+import com.jin.agentx_learning.infrastructure.verification.CaptchaUtils;
+import com.jin.agentx_learning.interfaces.dto.user.request.GetCaptchaRequest;
 import com.jin.agentx_learning.interfaces.dto.user.request.LoginRequest;
 import com.jin.agentx_learning.interfaces.dto.user.request.RegisterRequest;
 import com.jin.agentx_learning.interfaces.dto.user.response.CaptchaResponse;
