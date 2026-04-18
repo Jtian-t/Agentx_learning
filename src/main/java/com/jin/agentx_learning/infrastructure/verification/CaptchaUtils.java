@@ -69,6 +69,7 @@ public class CaptchaUtils {
 
     // 内部类 - 验证码信息
     private static class CaptchaInfo {
+    // zzhz这个final的修饰,是保证变量的可见性,防止并发问题.即类还没初始化时,就调用了这个方法
         private final String code;
         private final long expirationTime;
 
