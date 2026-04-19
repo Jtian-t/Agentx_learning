@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>801</IntrospectionStateNumber>
+      <IntrospectionStateNumber>802</IntrospectionStateNumber>
       <ServerVersion>18.3</ServerVersion>
       <StartupTime>1776351694</StartupTime>
       <TimeZones>true ACDT
@@ -699,7 +699,7 @@ true posixrules
 13293||10|C|G
 13293||-9223372036854775808|U|G
 13293||10|U|G</Grants>
-      <IntrospectionStateNumber>801</IntrospectionStateNumber>
+      <IntrospectionStateNumber>802</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>AgentX_Learn</OwnerName>
     </database>
@@ -722,46 +722,7 @@ true posixrules
       <ObjectId>16389</ObjectId>
       <OwnerName>AgentX_Learn</OwnerName>
     </database>
-    <role id="5" parent="1" name="pg_database_owner">
-      <ObjectId>6171</ObjectId>
-    </role>
-    <role id="6" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="9" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="10" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="12" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="15" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="16" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="17" parent="1" name="AgentX_Learn">
+    <role id="5" parent="1" name="AgentX_Learn">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -770,17 +731,56 @@ true posixrules
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
     </role>
-    <role id="18" parent="1" name="pg_maintain">
+    <role id="6" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_database_owner">
+      <ObjectId>6171</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_maintain">
       <ObjectId>6337</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="12" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_signal_autovacuum_worker">
+      <ObjectId>6392</ObjectId>
+    </role>
+    <role id="17" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="18" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <role id="19" parent="1" name="pg_use_reserved_connections">
       <ObjectId>4550</ObjectId>
     </role>
-    <role id="20" parent="1" name="pg_create_subscription">
-      <ObjectId>6304</ObjectId>
+    <role id="20" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
     </role>
-    <role id="21" parent="1" name="pg_signal_autovacuum_worker">
-      <ObjectId>6392</ObjectId>
+    <role id="21" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
     </role>
     <tablespace id="22" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
@@ -5956,8 +5956,8 @@ true posixrules
     <schema id="273" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>801</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2026-04-18.03:06:56</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>802</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2026-04-19.09:15:33</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
