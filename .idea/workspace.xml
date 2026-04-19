@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 创建了user表,并插入了admin和user两个用户">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +31,6 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="PerforceDirect.Settings">
     <option name="CHARSET" value="无" />
   </component>
@@ -52,6 +44,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.AgentX_learning [clean].executor": "Run",
+    "Maven.AgentX_learning [compile].executor": "Run",
+    "Maven.AgentX_learning [deploy].executor": "Run",
+    "Maven.AgentX_learning [install].executor": "Run",
+    "Maven.AgentX_learning [validate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -67,7 +64,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "ts.external.directory.path": "D:\\claude_program\\Agentx\\Agentx_learning\\agentx-frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -83,6 +84,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\claude_program\Agentx\Agentx_learning\添加的内容\Postgrelsql数据库" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="JarApplication" />
+        <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="AgentXLearningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -112,7 +122,8 @@
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
-      <workItem from="1776489973171" duration="32798000" />
+      <workItem from="1776489973171" duration="37600000" />
+      <workItem from="1776602195328" duration="4569000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
@@ -206,6 +217,7 @@
     <MESSAGE value="//配置使用claude. 为了使用obsidian mcp服务,设置了.mcp.json文件" />
     <MESSAGE value="//初步在docker中配置了postgrel,因为之前项目有postgrel容器导致了一些错误. 比如宿主机端口要修改一下,我改成5433:5432 5432是容器中,postgrel默认的监听端口,不要修改,要不然连接不上. 还有数据卷挂载的问题.之前的数据卷命名相同.导致冲突了.新创建的数据库无法配置上用户名和密码-导致一直远程连接不上. 还因为idea远程连接数据库的缓存,导致我认为更换了数据卷volume命名,但数据还是有问题. 你更换数据卷名字,docker会自动管理,创建一个新的文件夹,来存储postgrelsql的数据.会完全隔离的" />
     <MESSAGE value="// 将com.jin.agentx_learning.domain.user.model.UserEntity初始导入" />
+    <MESSAGE value="docs: add frontend design plan for login/register" />
     <MESSAGE value="// 创建了user表,并插入了admin和user两个用户" />
     <option name="LAST_COMMIT_MESSAGE" value="// 创建了user表,并插入了admin和user两个用户" />
   </component>
