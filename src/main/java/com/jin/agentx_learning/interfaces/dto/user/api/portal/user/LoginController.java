@@ -1,4 +1,4 @@
-package com.jin.agentx_learning.infrastructure.interceptor.api.portal.user;
+package com.jin.agentx_learning.interfaces.dto.user.api.portal.user;
 
 
 
@@ -58,57 +58,57 @@ public class LoginController {
         return Result.success(response);
     }
 
-    /** 发送邮箱验证码接口
-     * @param request
-     * @param httpRequest
-     * @return */
-    @PostMapping("/send-email-code")
-    public Result<?> sendEmailCode(@RequestBody @Validated SendEmailCodeRequest request,
-                                   HttpServletRequest httpRequest) {
-        // 获取客户端IP
-        String clientIp = getClientIp(httpRequest);
-
-        loginAppService.sendEmailVerificationCode(request.getEmail(), request.getCaptchaUuid(),
-                request.getCaptchaCode(), clientIp);
-        return Result.success().message("验证码已发送，请查收邮件");
-    }
-
-    /** 发送重置密码邮箱验证码接口
-     * @param request
-     * @param httpRequest
-     * @return */
-    @PostMapping("/send-reset-password-code")
-    public Result<?> sendResetPasswordCode(@RequestBody @Validated SendResetPasswordCodeRequest request,
-                                           HttpServletRequest httpRequest) {
-        // 获取客户端IP
-        String clientIp = getClientIp(httpRequest);
-
-        loginAppService.sendResetPasswordCode(request.getEmail(), request.getCaptchaUuid(), request.getCaptchaCode(),
-                clientIp);
-        return Result.success().message("验证码已发送，请查收邮件");
-    }
-
-    /** 验证邮箱验证码接口
-     * @param request
-     * @return */
-    @PostMapping("/verify-email-code")
-    public Result<Boolean> verifyEmailCode(@RequestBody @Validated VerifyEmailCodeRequest request) {
-        boolean isValid = loginAppService.verifyEmailCode(request.getEmail(), request.getCode());
-        if (isValid) {
-            return Result.success(true).message("验证码验证成功");
-        } else {
-            return Result.error(403, "验证码无效或已过期");
-        }
-    }
-
-    /** 重置密码接口
-     * @param request
-     * @return */
-    @PostMapping("/reset-password")
-    public Result<?> resetPassword(@RequestBody @Validated ResetPasswordRequest request) {
-        loginAppService.resetPassword(request.getEmail(), request.getNewPassword(), request.getCode());
-        return Result.success().message("密码重置成功");
-    }
+//    /** 发送邮箱验证码接口
+//     * @param request
+//     * @param httpRequest
+//     * @return */
+//    @PostMapping("/send-email-code")
+//    public Result<?> sendEmailCode(@RequestBody @Validated SendEmailCodeRequest request,
+//                                   HttpServletRequest httpRequest) {
+//        // 获取客户端IP
+//        String clientIp = getClientIp(httpRequest);
+//
+//        loginAppService.sendEmailVerificationCode(request.getEmail(), request.getCaptchaUuid(),
+//                request.getCaptchaCode(), clientIp);
+//        return Result.success().message("验证码已发送，请查收邮件");
+//    }
+//
+//    /** 发送重置密码邮箱验证码接口
+//     * @param request
+//     * @param httpRequest
+//     * @return */
+//    @PostMapping("/send-reset-password-code")
+//    public Result<?> sendResetPasswordCode(@RequestBody @Validated SendResetPasswordCodeRequest request,
+//                                           HttpServletRequest httpRequest) {
+//        // 获取客户端IP
+//        String clientIp = getClientIp(httpRequest);
+//
+//        loginAppService.sendResetPasswordCode(request.getEmail(), request.getCaptchaUuid(), request.getCaptchaCode(),
+//                clientIp);
+//        return Result.success().message("验证码已发送，请查收邮件");
+//    }
+//
+//    /** 验证邮箱验证码接口
+//     * @param request
+//     * @return */
+//    @PostMapping("/verify-email-code")
+//    public Result<Boolean> verifyEmailCode(@RequestBody @Validated VerifyEmailCodeRequest request) {
+//        boolean isValid = loginAppService.verifyEmailCode(request.getEmail(), request.getCode());
+//        if (isValid) {
+//            return Result.success(true).message("验证码验证成功");
+//        } else {
+//            return Result.error(403, "验证码无效或已过期");
+//        }
+//    }
+//
+//    /** 重置密码接口
+//     * @param request
+//     * @return */
+//    @PostMapping("/reset-password")
+//    public Result<?> resetPassword(@RequestBody @Validated ResetPasswordRequest request) {
+//        loginAppService.resetPassword(request.getEmail(), request.getNewPassword(), request.getCode());
+//        return Result.success().message("密码重置成功");
+//    }
 
     /** 获取客户端IP
      * @param request

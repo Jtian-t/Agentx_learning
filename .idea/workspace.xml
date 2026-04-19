@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 创建了user表,并插入了admin和user两个用户">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/auth/AuthSettingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/auth/model/AuthSettingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/model/UserSettingsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/repository/UserSettingsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/service/AuthSettingDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/converter/MapConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/email/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/repository/MyBatisPlusExtRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/verification/VerificationCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/verification/storage/CodeStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/interfaces/dto/user/api/portal/user/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/application/user/service/LoginAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/application/user/service/LoginAppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/interceptor/api/portal/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/interceptor/api/portal/user/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/service/UserDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/service/UserDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/infrastructure/interceptor/api/portal/user/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/执行步骤/01_身份校验实战计划.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/添加的内容/问题记录/01_开发问题与解决方案记录.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/问题记录/01_开发问题与解决方案记录.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,33 +64,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AgentXLearningApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/claude_program/Agentx/Agentx_learning&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AgentXLearningApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/claude_program/Agentx/Agentx_learning/src/main/java/com/jin/agentx_learning/infrastructure",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\claude_program\Agentx\Agentx_learning\添加的内容\Postgrelsql数据库" />
     </key>
@@ -105,7 +126,7 @@
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
-      <workItem from="1776489973171" duration="22516000" />
+      <workItem from="1776489973171" duration="29328000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
