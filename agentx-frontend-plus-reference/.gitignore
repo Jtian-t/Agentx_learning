@@ -1,0 +1,13 @@
+# 忽略前端依赖
+node_modules/
+agentx-frontend-plus-reference/node_modules/
+
+# 忽略 Maven 编译输出
+target/
+
+# 忽略 IDEA 配置文件
+.idea/
+*.iml
+
+# 忽略日志
+*.log

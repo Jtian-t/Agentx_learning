@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentX - 用户登录/注册</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-wrapper">
+            <div class="auth-header">
+                <h1>AgentX</h1>
+                <p>欢迎回来</p>
+            </div>
+
+            <!-- 登录表单 -->
+            <div id="loginForm" class="auth-form active">
+                <h2>用户登录</h2>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="loginAccount">账号（邮箱/手机号）</label>
+                        <input type="text" id="loginAccount" name="account" required placeholder="请输入邮箱或手机号">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">密码</label>
+                        <input type="password" id="loginPassword" name="password" required placeholder="请输入密码">
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label for="loginCaptcha">验证码</label>
+                        <div class="captcha-wrapper">
+                            <input type="text" id="loginCaptcha" name="captcha" required placeholder="请输入验证码">
+                            <img id="loginCaptchaImage" src="" alt="验证码" onclick="refreshLoginCaptcha()" title="点击刷新">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">登录</button>
+                </form>
+                <p class="switch-form">
+                    还没有账号？<a href="#" onclick="showRegisterForm()">立即注册</a>
+                </p>
+            </div>
+
+            <!-- 注册表单 -->
+            <div id="registerForm" class="auth-form">
+                <h2>用户注册</h2>
+                <form onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="registerEmail">邮箱</label>
+                        <input type="email" id="registerEmail" name="email" required placeholder="请输入邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPhone">手机号（可选）</label>
+                        <input type="tel" id="registerPhone" name="phone" placeholder="请输入手机号">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">密码</label>
+                        <input type="password" id="registerPassword" name="password" required placeholder="请输入密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">确认密码</label>
+                        <input type="password" id="registerConfirmPassword" required placeholder="请再次输入密码">
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label for="registerCaptcha">验证码</label>
+                        <div class="captcha-wrapper">
+                            <input type="text" id="registerCaptcha" name="captcha" required placeholder="请输入验证码">
+                            <img id="registerCaptchaImage" src="" alt="验证码" onclick="refreshRegisterCaptcha()" title="点击刷新">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">注册</button>
+                </form>
+                <p class="switch-form">
+                    已有账号？<a href="#" onclick="showLoginForm()">立即登录</a>
+                </p>
+            </div>
+
+            <!-- 成功提示 -->
+            <div id="successMessage" class="auth-form">
+                <div class="success-icon">✓</div>
+                <h2 id="successTitle">操作成功</h2>
+                <p id="successText">欢迎使用 AgentX</p>
+                <button class="btn-primary" onclick="showLoginForm()">返回登录</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast 提示 -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
