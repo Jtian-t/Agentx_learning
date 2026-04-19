@@ -4,47 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 后端LoginController 位置修复02">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/app-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/app-build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/.rscinfo" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/.rscinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/1.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/2.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/3.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/4.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/5.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/10.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/11.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/2.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/3.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/4.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/5.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/6.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/7.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/8.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/9.pack.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/index.pack.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/client-development/index.pack.gz.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/edge-server-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/edge-server-development/0.pack.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/edge-server-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/edge-server-development/index.pack.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/0.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/1.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/2.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/3.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/4.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/5.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/1.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/10.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/11.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/12.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/2.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/3.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/4.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/5.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/6.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/7.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/8.pack.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/9.pack.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/index.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/cache/webpack/server-development/index.pack.gz.old" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/react-loadable-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/app-paths-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/app-paths-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-build-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-react-loadable-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/middleware-react-loadable-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/server-reference-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/server/server-reference-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/static/development/_buildManifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/.next/trace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/lib/api-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/lib/api-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/interfaces/api/portal/auth/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jin/agentx_learning/interfaces/dto/user/api/portal/user/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/components/ui/calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/components/ui/calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/components/ui/datetime-picker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/components/ui/datetime-picker.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +169,7 @@
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
       <workItem from="1776489973171" duration="37600000" />
-      <workItem from="1776602195328" duration="7539000" />
+      <workItem from="1776602195328" duration="9348000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
@@ -252,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776609465551</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs">
+      <option name="closed" value="true" />
+      <created>1776610627624</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776610627624</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +309,8 @@
     <MESSAGE value="// 因为node_modules模块下载的配置太多没上传成功.增加忽略,上传前端内容" />
     <MESSAGE value="// 后端LoginController 位置修复" />
     <MESSAGE value="// 后端LoginController 位置修复02" />
-    <option name="LAST_COMMIT_MESSAGE" value="// 后端LoginController 位置修复02" />
+    <MESSAGE value="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
