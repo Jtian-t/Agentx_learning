@@ -1,5 +1,4 @@
-package com.jin.agentx_learning.interfaces.dto.user.api.portal.user;
-
+package com.jin.agentx_learning.interfaces.api.portal.auth;
 
 
 import com.jin.agentx_learning.application.user.service.LoginAppService;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 
 import java.util.Map;
 
