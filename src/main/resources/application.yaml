@@ -4,16 +4,9 @@ spring:
     username: AgentX_Learn
     password: AgentX_Learn
     driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update  # 可选: none, validate, update, create, create-drop
-    show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
 
-# MyBatis-Plus配置
+  # MyBatis-Plus配置
+
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   type-aliases-package: com.jin.agentx_learning.domain

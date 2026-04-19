@@ -8,12 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a11fdc06-f497-42b3-932d-173f140ab29f/storage_v2/_src_/database/AgentX_Learn.-LAn2g/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/AgentXLearningApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/AgentXLearningApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/auth/AuthSettingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/auth/AuthSettingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/repository/UserSettingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jin/agentx_learning/domain/user/repository/UserSettingsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/添加的内容/问题记录/01_开发问题与解决方案记录.md" beforeDir="false" afterPath="$PROJECT_DIR$/添加的内容/问题记录/01_开发问题与解决方案记录.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1776059531254" duration="299000" />
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
-      <workItem from="1776489973171" duration="31485000" />
+      <workItem from="1776489973171" duration="32798000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
