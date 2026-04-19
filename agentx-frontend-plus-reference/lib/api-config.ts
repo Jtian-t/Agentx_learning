@@ -1,7 +1,7 @@
 // API地址配置 - 通过 Next.js rewrites 代理转发到后端
 function getDefaultApiUrl(): string {
-  // 统一使用 /api 前缀，由 Next.js rewrites 代理到后端 http://localhost:8088/xxx
-  // 前端请求 /api/xxx -> Next.js 代理 -> http://localhost:8088/xxx
+  // 统一使用 /api 前缀，由 Next.js rewrites 代理到后端 http://localhost:8088/api/xxx
+  // 后端 context-path=/api，前端请求 /api/xxx -> Next.js 代理 -> http://localhost:8088/api/xxx
   return '/api';
 }
 

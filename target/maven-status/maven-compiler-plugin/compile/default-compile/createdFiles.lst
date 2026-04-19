@@ -21,9 +21,9 @@ com\jin\agentx_learning\infrastructure\utils\PasswordUtils.class
 com\jin\agentx_learning\interfaces\dto\user\request\RegisterRequest.class
 com\jin\agentx_learning\infrastructure\email\EmailService.class
 com\jin\agentx_learning\application\user\service\LoginAppService.class
+com\jin\agentx_learning\interfaces\api\portal\user\LoginController.class
 com\jin\agentx_learning\infrastructure\exception\EntityNotFoundException.class
 com\jin\agentx_learning\interfaces\dto\user\request\GetCaptchaRequest.class
-com\jin\agentx_learning\interfaces\dto\user\api\portal\user\LoginController.class
 com\jin\agentx_learning\infrastructure\auth\UserContext.class
 com\jin\agentx_learning\AgentXLearningApplication.class
 com\jin\agentx_learning\domain\user\service\AuthSettingDomainService.class

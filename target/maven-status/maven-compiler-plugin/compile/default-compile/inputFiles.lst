@@ -7,7 +7,6 @@ D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\i
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\domain\user\auth\AuthSettingRepository.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\domain\user\model\UserEntity.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure\converter\MapConverter.java
-D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\interfaces\dto\user\api\portal\user\LoginController.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\interfaces\dto\user\request\GetCaptchaRequest.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure\common\Result.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\domain\user\service\AuthSettingDomainService.java
@@ -28,6 +27,7 @@ D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\i
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure\email\EmailService.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure\exception\BusinessException.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\infrastructure\utils\JwtUtils.java
+D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\interfaces\api\portal\user\LoginController.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\domain\user\repository\UserSettingsRepository.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\interfaces\dto\user\request\LoginRequest.java
 D:\claude_program\Agentx\Agentx_learning\src\main\java\com\jin\agentx_learning\AgentXLearningApplication.java

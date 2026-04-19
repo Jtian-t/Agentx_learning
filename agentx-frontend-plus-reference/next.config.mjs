@@ -32,12 +32,12 @@ const nextConfig = {
   // 确保静态资源路径正确
   trailingSlash: false,
   generateEtags: false,
-  // API代理：将前端 /api/xxx 请求转发到后端 http://localhost:8088/xxx
+  // API代理：将前端 /api/xxx 请求转发到后端 http://localhost:8088/api/xxx
   async rewrites() {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:8088/:path*',
+        destination: 'http://localhost:8089/api/:path*',
       },
     ]
   },

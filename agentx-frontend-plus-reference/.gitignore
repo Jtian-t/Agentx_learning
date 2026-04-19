@@ -11,3 +11,6 @@ target/
 
 # 忽略日志
 *.log
+
+# 忽略 Next.js 的构建输出和缓存
+.next/
