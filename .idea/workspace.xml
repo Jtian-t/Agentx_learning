@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jin/agentx_learning/infrastructure/utils/PasswordUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agentx-frontend-plus-reference/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/agentx-frontend-plus-reference/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="7e6c9409-e49f-497b-9f6a-39f459d419ef" name="更改" comment="// 能跑通登录功能了&#10;账号 :jin@agentx.ai&#10;密码 :admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +161,7 @@
       <workItem from="1776342735041" duration="7922000" />
       <workItem from="1776353021470" duration="16216000" />
       <workItem from="1776489973171" duration="37600000" />
-      <workItem from="1776602195328" duration="11850000" />
+      <workItem from="1776602195328" duration="12584000" />
     </task>
     <task id="LOCAL-00001" summary="//2 初始化, .idea中的内容都是自动配置的,我也不知道是那一部分写的">
       <option name="closed" value="true" />
@@ -263,7 +259,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776610627624</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="// 能跑通登录功能了&#10;账号 :jin@agentx.ai&#10;密码 :admin">
+      <option name="closed" value="true" />
+      <created>1776658682090</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1776658682090</updated>
+    </task>
+    <task id="LOCAL-00014" summary="// 能跑通登录功能了&#10;账号 :jin@agentx.ai&#10;密码 :admin">
+      <option name="closed" value="true" />
+      <created>1776658701048</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1776658701048</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +318,8 @@
     <MESSAGE value="// 后端LoginController 位置修复" />
     <MESSAGE value="// 后端LoginController 位置修复02" />
     <MESSAGE value="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs" />
-    <option name="LAST_COMMIT_MESSAGE" value="// 前端做了相应的适配,已经可以初步访问到后端了&#10; port: 8089 因为后端端口的冲突,将默认的8088改成了8089&#10; &#10; 前端主要的路由文件是这个next.config.mjs" />
+    <MESSAGE value="// 能跑通登录功能了&#10;账号 :jin@agentx.ai&#10;密码 :admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="// 能跑通登录功能了&#10;账号 :jin@agentx.ai&#10;密码 :admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
